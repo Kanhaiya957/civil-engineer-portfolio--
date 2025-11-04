@@ -114,43 +114,24 @@ h1, h2, h3 {
 
 
 /* --- Hero Section --- */
-.hero {
+
+.hero-section {
+    /* --- ANIMATED BACKGROUND SETUP --- */
+    background: linear-gradient(-45deg, #004d99, #0073e6, #004d99); 
+    background-size: 400% 400%; 
+    
+    /* --- COMBINED ANIMATION LINE (The crucial part) --- */
+    /* gradient-shift runs infinitely; slideInFade runs once (1) */
+    animation: gradient-shift 15s ease infinite, slideInFade 1.5s ease-out 1;
+    
+    /* --- Layout Properties (Keep these) --- */
+    height: 100vh;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    padding: 100px 5%;
-    min-height: 100vh;
-    background: var(--dark-color);
-}
-
-.hero-content {
-    flex: 1;
-    max-width: 600px;
-}
-
-.hero-content h1 {
-    font-size: 3.5em;
-    color: var(--accent-color);
-}
-
-.hero-content .subtitle {
-    font-size: 1.5em;
-    color: var(--primary-color);
-    margin-bottom: 1em;
-}
-
-.hero-image {
-    flex-shrink: 0;
-    margin-left: 50px;
-}
-
-.hero-image img {
-    width: 300px; /* Adjust size */
-    height: 300px;
-    object-fit: cover;
-    border-radius: 50%; /* Circular image */
-    border: 5px solid var(--primary-color);
-    box-shadow: 0 0 20px rgba(63, 114, 175, 0.5); /* Blue glow */
+    text-align: center;
+    color: white;
+    /* You may also want to set overflow: hidden; here to hide the initial slide overflow */
 }
 
 /* --- Skills Section --- */
@@ -296,3 +277,4 @@ footer {
         justify-content: center;
     }
 }
+
