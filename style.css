@@ -1,15 +1,3 @@
-/* KEYFRAMES FOR ANIMATED GRADIENT BACKGROUND */
-@keyframes gradient-shift {
-    0% {
-        background-position: 0% 50%; /* Start position */
-    }
-    50% {
-        background-position: 100% 50%; /* Middle position (moves horizontally) */
-    }
-    100% {
-        background-position: 0% 50%; /* End position (loops back) */
-    }
-}
 
 /* Base Styles */
 :root {
@@ -303,4 +291,5 @@ footer {
         justify-content: center;
     }
 }
+
 
